@@ -7,3 +7,10 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Aventi";
+  src: url("/fonts/AventiBold-x3VVj.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

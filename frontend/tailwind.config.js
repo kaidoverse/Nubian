@@ -8,6 +8,10 @@ export default {
         "rabbit-red": "#ea2e0e",
       }
     },
+    fontFamily: {
+      'aventi': ['Aventi', 'sans-serif'],
+      'inter': ['Inter', 'sans-serif'],
+    },
   },
   plugins: [],
 }

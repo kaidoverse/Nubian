@@ -5,8 +5,8 @@ import React from 'react'
 
 const Topbar = () => {
     return (
-        <div className="bg-rabbit-red text-white">
-            <div className='container mx-auto flex  justify-between items-center py-2 px-2'>
+        <div className="bg-black text-white">
+            <div className='container mx-auto flex  justify-between items-center py-3 px-6'>
 
                 <div className="hidden md:flex items-center space-x-4">
                     <a href="#" className="hover:text-gray-300">
@@ -18,7 +18,7 @@ const Topbar = () => {
                     </a>
 
                     <a href="#" className="hover:text-gray-300">
-                        <RiTwitterXLine className='h-5 w-4' />
+                        <RiTwitterXLine className='h-4 w-4' />
                     </a>
                 </div>
 
@@ -28,7 +28,7 @@ const Topbar = () => {
                     </span>
                 </div>
 
-                <div className="text-sm hidden md:block text-white" >
+                <div className="text-sm hidden md:block" >
                     <a href="tel:233543608711" className="hover:text-gray-300">+233 (543) 608-711</a>
                 </div>
             </div>
