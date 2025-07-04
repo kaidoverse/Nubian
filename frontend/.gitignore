@@ -30,6 +30,9 @@ out/
 .env
 .env.*  # Ignore other env variants like .env.local, .env.production
 
+# .gitignore
+node_modules/
+
 # System files
 .DS_Store
 

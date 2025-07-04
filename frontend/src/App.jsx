@@ -4,10 +4,12 @@ import UserLayout from './component/layout/UserLayout'
 
 const App = () => {
   return (
+
     <div>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<UserLayout />}>{/*user layout*/}</Route>
+
           <Route>{/*admin layout*/}</Route>
         </Routes>
       </BrowserRouter>
