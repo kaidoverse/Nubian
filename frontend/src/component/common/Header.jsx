@@ -1,6 +1,7 @@
 import React from 'react'
 import Topbar from '../layout/Topbar'
 import Navbar from './Navbar'
+import CartDrawer from '../layout/CartDrawer'
 
 const Header = () => {
     return (
