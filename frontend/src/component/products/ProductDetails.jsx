@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner';
+import ProductGrid from './ProductGrid';
 
 const selectedProduct = {
     name: "Fall Jacket",
@@ -14,7 +15,34 @@ const selectedProduct = {
         { url: "https://picsum.photos/500/500?random=1", altText: "Stylish Jacket 1" },
         { url: "https://picsum.photos/500/500?random=2", altText: "Stylish Jacket 2" }
     ],
-}
+};
+const relatedProducts = [
+    {
+        _id: 1,
+        name: "product 1",
+        price: 100,
+        images: [{ url: "https://picsum.photos/500/500?random=3", altText: "Related Product 1" }],
+    },
+    {
+        _id: 1,
+        name: "product 2",
+        price: 100,
+        images: [{ url: "https://picsum.photos/500/500?random=4", altText: "Related Product 2" }],
+    },
+    {
+        _id: 1,
+        name: "product 3",
+        price: 100,
+        images: [{ url: "https://picsum.photos/500/500?random=5", altText: "Related Product 3" }],
+    },
+    {
+        _id: 1,
+        name: "product 4",
+        price: 100,
+        images: [{ url: "https://picsum.photos/500/500?random=6", altText: "Related Product 4" }],
+    },
+
+]
 const ProductDetails = () => {
 
     const [mainImage, setMainImage] = useState(selectedProduct.images[0].url);
@@ -163,6 +191,12 @@ const ProductDetails = () => {
                             </table>
                         </div>
                     </div>
+                </div>
+                <div className='mt-20'>
+                    <h2 className='text-2xl text-center font-medium mb-4'>
+                        You May Also Like
+                    </h2>
+                    <ProductGrid products={relatedProducts} />
                 </div>
             </div>
         </div>
