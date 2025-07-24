@@ -193,7 +193,7 @@ const ProductDetails = () => {
                     </div>
                 </div>
                 <div className='mt-20'>
-                    <h2 className='text-2xl text-center font-medium mb-4'>
+                    <h2 className='text-2xl text-center font-medium mb-4 sm:grid-cols-2  lg:grid-cols-4 gap-6'>
                         You May Also Like
                     </h2>
                     <ProductGrid products={relatedProducts} />

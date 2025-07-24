@@ -88,10 +88,10 @@ const NewArrivals = () => {
     return (
         <section className="py-16 px-4 lg:px-8">
             <div className="container mx-auto text-center mb-6">
-                <h2 className="text-3xl font-bold mb-4">Explore New Arrivals</h2>
-                <p className="text-lg text-gray-600 mb-8">
+                <h2 className="text-3xl font-bold mb-4">New Arrivals</h2>
+                {/* <p className="text-lg text-gray-600 mb-8">
                     Discover the latest styles straight off the runway, freshly added to keep your wardrobe on the cutting edge of fashion.
-                </p>
+                </p> */}
             </div>
 
             {/* Buttons and Carousel */}
