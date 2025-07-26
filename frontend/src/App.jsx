@@ -4,6 +4,7 @@ import UserLayout from './component/layout/UserLayout'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import { Toaster } from "sonner"
+import Register from './pages/Register'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/' element={<UserLayout />}>
             <Route index element={<Home />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
           </Route>
 
           <Route>{/*admin layout*/}</Route>
