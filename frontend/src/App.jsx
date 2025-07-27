@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import UserLayout from './component/layout/UserLayout'
 import Home from './pages/Home'
 import Login from './pages/Login'
+import Proflle from './pages/Profile'
 import { Toaster } from "sonner"
 import Register from './pages/Register'
 
@@ -17,6 +18,7 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/profile' element={<Proflle />} />
           </Route>
 
           <Route>{/*admin layout*/}</Route>
