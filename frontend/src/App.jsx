@@ -7,6 +7,7 @@ import Proflle from './pages/Profile'
 import { Toaster } from "sonner"
 import Register from './pages/Register'
 import CollectionPage from './pages/CollectionPage'
+import ProductDetails from './component/products/ProductDetails'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path='/register' element={<Register />} />
             <Route path='/profile' element={<Proflle />} />
             <Route path='/collection/:collection' element={<CollectionPage />} />
+            <Route path='/product/:id' element={<ProductDetails />} />
           </Route>
 
           <Route>{/*admin layout*/}</Route>
