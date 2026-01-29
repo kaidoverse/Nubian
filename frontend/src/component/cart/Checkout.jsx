@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import Paystack from './Paystack';
+import PayButton from './PayButton';
 
 const Cart = {
     products: [
@@ -130,7 +130,7 @@ const Checkout = () => {
                                 <h3 className='text-lg mb-4'>
                                     Pay with Paypal
                                 </h3>
-                                <Paystack amount={100} onSuccess={handlePaymentSuccess} onError={(err) => alert("payment failed. Try again")} />
+                                <PayButton amount={100} onSuccess={handlePaymentSuccess} onError={(err) => alert("payment failed. Try again")} />
                             </div>
                         )}
                     </div>
@@ -141,3 +141,6 @@ const Checkout = () => {
 }
 
 export default Checkout
+
+
+
