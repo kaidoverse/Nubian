@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import heroImg1 from '../../assets/heroImg1.png';
-import heroImg2 from '../../assets/heroImg2.png';
-import heroImg3 from '../../assets/heroImg3.png';
+import heroImg1 from "../../assets/hero-img-1.png";
+import heroImg2 from '../../assets/hero-img2.png';
+import heroImg3 from '../../assets/hero-img3.png';
 
 const Hero = () => {
     const images = [
