@@ -8,10 +8,10 @@ import { Toaster } from "sonner"
 import Register from './pages/Register'
 import CollectionPage from './pages/CollectionPage'
 import ProductDetails from './component/products/ProductDetails'
+import Checkout from './component/cart/Checkout'
 
 const App = () => {
   return (
-
     <div className='w-full overflow-x-hidden'>
       <BrowserRouter>
         <Toaster position='top-right' reverseOrder={false} />
@@ -23,6 +23,7 @@ const App = () => {
             <Route path='/profile' element={<Proflle />} />
             <Route path='/collection/:collection' element={<CollectionPage />} />
             <Route path='/product/:id' element={<ProductDetails />} />
+            <Route path='checkout' element={<Checkout />} />
           </Route>
 
           <Route>{/*admin layout*/}</Route>

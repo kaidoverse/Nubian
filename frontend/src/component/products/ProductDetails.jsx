@@ -87,8 +87,8 @@ const ProductDetails = () => {
     }
 
     return (
-        <div className='p-6'>
-            <div className='max-w-6xl mx-auto bg-white p-8 rounded-lg'>
+        <>
+            <div className='max-w-7xl mx-auto p-6 bg-white rounded-lg'>
                 <div className='flex flex-col md:flex-row'>
                     {/* left thumbnails */}
                     <div className='hidden md:flex flex-col space-y-4 mr-6'>
@@ -192,14 +192,14 @@ const ProductDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-20'>
-                    <h2 className='text-2xl text-center font-medium mb-4 sm:grid-cols-2  lg:grid-cols-4 gap-6'>
-                        You May Also Like
-                    </h2>
-                    <ProductGrid products={relatedProducts} />
-                </div>
             </div>
-        </div>
+            <div className='mt-20'>
+                <h2 className='text-2xl text-center font-medium mb-4 sm:grid-cols-2  lg:grid-cols-4 gap-6'>
+                    You May Also Like
+                </h2>
+                <ProductGrid products={relatedProducts} />
+            </div>
+        </>
     )
 }
 
