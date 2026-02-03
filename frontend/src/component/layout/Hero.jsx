@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import heroImg1 from "../../assets/heroImg1.webp";
-import heroImg2 from "../../assets/heroImg2.webp";
-import heroImg3 from "../../assets/heroImg3.webp";
+import heroImg1 from "../../assets/heroimg1.webp";
+import heroImg2 from "../../assets/heroimg2.webp";
+import heroImg3 from "../../assets/heroimg3.webp";
 
 
 
